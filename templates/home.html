@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home Page{% endblock title %}
+{% block content %}
+<br/>
+
+<div class="jumbotron">
+<div class="container">
+<div class="row">
+<div class="col-sm">
+<h1 class="display-4">Article app</h1>
+<p class="lead">A Simple Project website built with Django.</p>
+<p class="lead">
+<a class="btn btn-primary btn-lg" href="{% url 'article_list' %}"
+role="button">View All Articles</a>
+</p>
+</div>
+<div class="col-sm">
+<img src="{% static 'images/sol-icon.png' %}" alt="home">
+</div>
+</div>
+</div>
+</div>
+
+    
+
+
+{% endblock content %}
